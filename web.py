@@ -12,9 +12,17 @@ def show_data_drowsiness():
     df = pd.read_csv('drowsiness_yawn_log.csv')
     st.table(df)
 
+    # Add a line chart to visualize data
+    st.subheader('Drowsiness Chart')
+    st.line_chart(df['Event'])  # Replace 'Column_Name' with the actual column you want to visualize
+
 def show_data_lane():
     df = pd.read_csv('lane_change_events.csv')
     st.table(df)
+
+    # Add a bar chart to visualize data
+    st.subheader('Lane Chart')
+    st.bar_chart(df['direction'])  # Replace 'Column_Name' with the actual column you want to visualize
 
 # Streamlit app layout
 st.title('CV Solutions')
