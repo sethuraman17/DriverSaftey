@@ -1,0 +1,8 @@
+Pillow==9.2.0
+streamlit==1.29.0
+imutils==0.5.4
+numpy==1.21.1
+scipy==1.7.1
+dlib==19.22.1
+opencv-python==4.5.3.56
+pyttsx3==2.90
